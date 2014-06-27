@@ -109,16 +109,6 @@
     <Content Include="Content\prettyPhoto\light_square\loader.gif" />
     <Content Include="Content\prettyPhoto\light_square\sprite.png" />
     <Content Include="Content\ui.totop.png" />
-    <Content Include="oForm-Contact.html" />
-    <Content Include="Page-About-Us.html" />
-    <Content Include="Page-Buttons.html" />
-    <Content Include="Page-FAQs.html" />
-    <Content Include="Page-Icons.html" />
-    <Content Include="Page-Our-Team.html" />
-    <Content Include="Page-Pricing-Tables.html" />
-    <Content Include="Page-Services.html" />
-    <Content Include="Page-UI-Elements.html" />
-    <Content Include="Page-Welcome.html" />
     <Content Include="Scripts\jquery.isotope.min.js" />
     <Content Include="Scripts\jquery.prettyPhoto.min.js" />
     <Content Include="Scripts\jquery.themepunch.revolution.min.js" />
@@ -143,11 +133,8 @@
     <Content Include="Placement.info">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Widget-Footer1.html" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Zones\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
   </ItemGroup>
