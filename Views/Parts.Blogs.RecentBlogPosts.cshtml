@@ -27,7 +27,7 @@ else {
                 }
                 <h5>
                     @Html.ItemDisplayLink(title, contentItem)
-                    <small>Posted @date.ToShortDateString()</small>
+                    <small>@T("Posted") @date.ToShortDateString()</small>
                 </h5>
             </li>
         }

@@ -3,11 +3,9 @@
     IEnumerable<object> searchResults = Model.ContentItems;
     Model.ContentItems.Classes.Add("content-items");
     Model.ContentItems.Classes.Add("search-results");
-}
 
-<script type="text/javascript">
-    $('#page-title-widget').html('<div class="col-sm-6"><h4>@T("Search")</h4></div>');
-</script>
+    WorkContext.Layout.BeforeMain.Add(New.Parts_Title(Title: T("Search Results").Text + (HasText(Model.Query) ? T(" for \"{0}\"", Model.Query) : T(""))), "0");
+}
 
 @if (HasText(Model.Query)) {
     if (!searchResults.Any()) { 

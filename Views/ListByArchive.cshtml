@@ -4,11 +4,9 @@
 @{
     var dateTimeLocalization = WorkContext.Resolve<Orchard.Localization.Services.IDateTimeFormatProvider>();
     var monthNames = dateTimeLocalization.MonthNames.ToArray();
-}
 
-<script type="text/javascript">
-    $('#page-title-widget').html('<div class="col-sm-6"><h4>@Html.TitleForPage(T("Archives").Text, (string)Model.ArchiveData.Year.ToString(), (string)(Model.ArchiveData.Month > 0 ? monthNames[Model.ArchiveData.Month - 1] : null), (string)(Model.ArchiveData.Day > 0 ? Model.ArchiveData.Day.ToString() : null))</h4></div>');
-</script>
+    WorkContext.Layout.BeforeMain.Add(New.Parts_Title(Title: T("Archives").Text + " / " + (string)Model.ArchiveData.Year.ToString() + (string)(Model.ArchiveData.Month > 0 ? " / " + monthNames[Model.ArchiveData.Month - 1] : null) + (string)(Model.ArchiveData.Day > 0 ? " / " + Model.ArchiveData.Day.ToString() : null)), "0");
+}
 
 <div class="archive-trail">
     @T("Archives") / 

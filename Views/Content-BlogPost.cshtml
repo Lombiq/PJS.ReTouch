@@ -32,19 +32,19 @@
                         }
                     </div>
                     <a class="left carousel-control" href="#blogpost-carousel-@blogPost.Id" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="fa fa-chevron-left"></span>
                     </a>
                     <a class="right carousel-control" href="#blogpost-carousel-@blogPost.Id" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="fa fa-chevron-right"></span>
                     </a>
                 </div>
             </div>
             using (Script.Foot()) {
-                    <script type="text/javascript">
-                        $(function () {
-                            $('.post-details').css('border-top', '0');
-                        });
-                    </script>
+                <script type="text/javascript">
+                    $(function () {
+                        $('.post-details').css('border-top', '0');
+                    });
+                </script>
             }
         }
         else if (imageField != null && Model.ContentItem.BlogPostPart.BlogPostImage.MediaParts.Count == 1) {
@@ -54,11 +54,11 @@
                 }
             </div>
                 using (Script.Foot()) {
-                <script type="text/javascript">
-                    $(function () {
-                        $('.post-details').css('border-top', '0');
-                    });
-                </script>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('.post-details').css('border-top', '0');
+                        });
+                    </script>
                 }
         }
         else {

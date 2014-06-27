@@ -1,4 +1,5 @@
 ﻿@using Orchard.Utility.Extensions;
+
 @{
     Layout.Title = Model.ContentItem.TitlePart.Title;
 
@@ -9,6 +10,7 @@
     
     var tag = Tag(Model, "article");
 }
+
 @tag.StartElement
     <header>
         @Display(Model.Header)

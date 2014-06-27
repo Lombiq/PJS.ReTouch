@@ -1,5 +1,5 @@
 ﻿@{
-    Script.Include("styler.js");
+    Script.Require("Styler");
 }
 
 <style type="text/css">
@@ -10,7 +10,7 @@
 </style>
 
 <div id="skin-chooser-wrap" class="skin-chooser-wrap hidden-xs">
-    <span class="change-style">Change Styles</span>
+    <span class="change-style">@T("Change Styles")</span>
     <span class="skin-chooser-toggle"><i class="fa fa-cog"></i></span>
     <ul class="list-inline">
         <li>
@@ -65,7 +65,7 @@
     <div class="checkbox">
         <label>
             <input type="checkbox" id="hovermenus" />
-            Enable Hover Menus
+            @T("Enable Hover Menus")
         </label>
     </div>
 </div>

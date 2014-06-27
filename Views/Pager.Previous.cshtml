@@ -8,4 +8,4 @@
         rvd = RouteValues is RouteValueDictionary ? (RouteValueDictionary)RouteValues : new RouteValueDictionary(RouteValues);
     }
 }
-<a href="@Url.Action((string)rvd["action"], rvd)"><i class="fa fa-long-arrow-left"></i>&nbsp;Previous</a>
+<a href="@Url.Action((string)rvd["action"], rvd)"><i class="fa fa-long-arrow-left"></i>&nbsp;@T("Previous")</a>

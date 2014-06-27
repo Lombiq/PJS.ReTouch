@@ -32,11 +32,11 @@
            Parts_Common_Metadata="-"/>
   </Match>
   
-  <Match Path="/">
+  <Match Path="~/">
     <Place Parts_Title="-"/>
   </Match>
 
-  <Match Path="/Search">
+  <Match Path="~/Search">
     <Place Parts_Title="-"/>
   </Match>
 </Placement>

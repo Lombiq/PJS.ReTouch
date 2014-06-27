@@ -6,15 +6,9 @@
         return HasText(zoneNumsFilled) ? classNamePrefix + zoneNumsFilled : "";
     }
 }
-@{
-    /* Global includes for the theme
-    ***************************************************************/
 
-    SetMeta("charset", "utf-8");
-    SetMeta("robots", "index, follow");
-    SetMeta("X-UA-Compatible", "IE=edge,chrome=1");
-    SetMeta("viewport", "width=device-width, initial-scale=1");
-    SetMeta("apple-mobile-web-app-capable", "yes");
+@{
+    Display.Insertions();
 
     /* Some useful shortcuts or settings
     ***************************************************************/
@@ -42,20 +36,12 @@
         Model.Classes.Add(footerQuadClass);
     }
 
-    /* Inserting some ad hoc shapes
-    ***************************************************************/
-
-    WorkContext.Layout.Header.Add(New.Branding(), "0"); // Site name and link to the home page
-    WorkContext.Layout.Footer.Add(New.Copyright(), "5"); // Copyright notice
-    WorkContext.Layout.Footer.Add(New.FooterLinks(), "5"); // Footer links
-    
-    WorkContext.Layout.Footer.Add(New.Styler(), "0"); // Online Styler-remove or comment this line to disable styler
-
     /* Last bit of code to prep the layout wrapper
     ***************************************************************/
 
     var tag = Tag(Model, "div"); // using Tag so the layout div gets the classes, id and other attributes added to the Model
 }
+
 <!-- Wrap all page content here -->
 <div id="utter-wrapper">
     <div id="header" class="header" data-spy="affix" data-offset-top="10">

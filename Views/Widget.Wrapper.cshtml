@@ -1,10 +1,12 @@
 ﻿@using Orchard.ContentManagement;
 @using Orchard.Widgets.Models;
+
 @{
     var widgetPart = ((IContent)Model.ContentItem).As<WidgetPart>();
     Model.Classes.Add("pad-bottom-25");
     var tag = Tag(Model, "article");
 }
+
 @tag.StartElement
 @if ((widgetPart.RenderTitle && HasText(widgetPart.Title)) || Model.Header != null) {
     <header>

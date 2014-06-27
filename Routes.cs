@@ -14,11 +14,39 @@ namespace PJS.ReTouch {
             return new[] {
                 new RouteDescriptor {
                     Priority = 5,
-                    Route = new Route("Admin/" + Constants.RoutesAreaName,
+                    Route = new Route("ValidateUserName",
                         new RouteValueDictionary {
                             {"area", Constants.RoutesAreaName},
-                            {"controller", "Admin"},
-                            {"action", "Index"}
+                            {"controller", "Validate"},
+                            {"action", "ValidateUserName"}
+                        },
+                        new RouteValueDictionary(),
+                        new RouteValueDictionary {
+                            {"area", Constants.RoutesAreaName}
+                        },
+                        new MvcRouteHandler())
+                },
+                new RouteDescriptor {
+                    Priority = 5,
+                    Route = new Route("ValidateUserEmail",
+                        new RouteValueDictionary {
+                            {"area", Constants.RoutesAreaName},
+                            {"controller", "Validate"},
+                            {"action", "ValidateUserEmail"}
+                        },
+                        new RouteValueDictionary(),
+                        new RouteValueDictionary {
+                            {"area", Constants.RoutesAreaName}
+                        },
+                        new MvcRouteHandler())
+                },
+                new RouteDescriptor {
+                    Priority = 5,
+                    Route = new Route("ValidateUserNameEmail",
+                        new RouteValueDictionary {
+                            {"area", Constants.RoutesAreaName},
+                            {"controller", "Validate"},
+                            {"action", "ValidateUserNameEmail"}
                         },
                         new RouteValueDictionary(),
                         new RouteValueDictionary {

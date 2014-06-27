@@ -4,11 +4,9 @@
     Html.AddTitleParts(T("Contents tagged with {0}", Model.TagName).ToString());
     Model.List.Classes.Add("tagged-posts");
     Model.List.Classes.Add("content-items");
-}
 
-<script type="text/javascript">
-    $('#page-title-widget').html('<div class="col-sm-6"><h4>@T("Contents tagged with <span>{0}</span>", Model.TagName)</h4></div>');
-</script>
+    WorkContext.Layout.BeforeMain.Add(New.Parts_Title(Title: T("Contents tagged with \"{0}\"</span>", Model.TagName)), "0");
+}
 
 @Display(Model.List)
 @Display(Model.Pager)

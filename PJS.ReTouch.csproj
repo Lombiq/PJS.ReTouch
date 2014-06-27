@@ -67,18 +67,9 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\about-1.jpg" />
-    <Content Include="Content\about-2.jpg" />
-    <Content Include="Content\about-3.jpg" />
-    <Content Include="Content\client-1.jpg" />
-    <Content Include="Content\client-2.jpg" />
-    <Content Include="Content\client-3.jpg" />
-    <Content Include="Content\client-4.jpg" />
-    <Content Include="Content\client-5.jpg" />
-    <Content Include="Content\client-6.jpg" />
+    <Content Include="Content\apple-touch-icon.png" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\ico\favicon.ico" />
+    <Content Include="Content\favicon.ico" />
     <Content Include="Content\prettyPhoto\dark_rounded\btnNext.png" />
     <Content Include="Content\prettyPhoto\dark_rounded\btnPrevious.png" />
     <Content Include="Content\prettyPhoto\dark_rounded\contentPattern.png" />
@@ -117,42 +108,33 @@
     <Content Include="Content\prettyPhoto\light_square\default_thumbnail.gif" />
     <Content Include="Content\prettyPhoto\light_square\loader.gif" />
     <Content Include="Content\prettyPhoto\light_square\sprite.png" />
-    <Content Include="Content\team-1.jpg" />
-    <Content Include="Content\team-2.jpg" />
-    <Content Include="Content\team-3.jpg" />
-    <Content Include="Content\team-4.jpg" />
-    <Content Include="Content\team-5.jpg" />
-    <Content Include="Content\team-6.jpg" />
-    <Content Include="Content\team-7.jpg" />
-    <Content Include="Content\testimonial-1.jpg" />
-    <Content Include="Content\testimonial-2.jpg" />
-    <Content Include="Content\testimonial-3.jpg" />
     <Content Include="Content\ui.totop.png" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\custom.js" />
-    <Content Include="Scripts\hovermenus.js" />
-    <Content Include="Scripts\html5shiv.js" />
-    <Content Include="Scripts\jquery.carouFredSel-6.2.1.js" />
-    <Content Include="Scripts\jquery.easing.min.js" />
+    <Content Include="oForm-Contact.html" />
+    <Content Include="Page-About-Us.html" />
+    <Content Include="Page-Buttons.html" />
+    <Content Include="Page-FAQs.html" />
+    <Content Include="Page-Icons.html" />
+    <Content Include="Page-Our-Team.html" />
+    <Content Include="Page-Pricing-Tables.html" />
+    <Content Include="Page-Services.html" />
+    <Content Include="Page-UI-Elements.html" />
+    <Content Include="Page-Welcome.html" />
     <Content Include="Scripts\jquery.isotope.min.js" />
-    <Content Include="Scripts\jquery.prettyPhoto.js" />
+    <Content Include="Scripts\jquery.prettyPhoto.min.js" />
     <Content Include="Scripts\jquery.themepunch.revolution.min.js" />
-    <Content Include="Scripts\jquery.ui.totop.min.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\styler.js" />
+    <Content Include="Scripts\script.min.js" />
+    <Content Include="Scripts\jquery.styler.js" />
     <Content Include="Styles\bootstrap.css" />
-    <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\font-awesome.css" />
-    <Content Include="Styles\font-awesome.min.css" />
     <Content Include="Styles\overwrite.css" />
     <Content Include="Styles\prettyPhoto.css" />
     <Content Include="Styles\settings.css" />
     <Content Include="Styles\skins.css" />
+    <Content Include="Styles\style.min.css" />
     <Content Include="Styles\style.css" />
     <Content Include="Styles\ui.totop.css" />
+    <Content Include="Styles\validationEngine.jquery.css" />
     <Content Include="Web.config" />
-    <Content Include="Views\Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
     <Content Include="Content\Web.config" />
@@ -161,6 +143,7 @@
     <Content Include="Placement.info">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Widget-Footer1.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Zones\" />
@@ -176,15 +159,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fonts\FontAwesome.otf" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Document.cshtml" />
@@ -212,9 +186,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Copyright.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\FooterLinks.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Widget.Wrapper.cshtml" />
@@ -337,25 +308,19 @@
     <Content Include="Views\NotFound.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminMenu.cs" />
     <Compile Include="Constants.cs" />
-    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\ValidateController.cs" />
     <Compile Include="Gravatar\Gravatar.cs" />
     <Compile Include="Gravatar\Gremail.cs" />
     <Compile Include="Gravatar\Grofile.cs" />
     <Compile Include="Gravatar\GrofileInfo.cs" />
     <Compile Include="Gravatar\Html\HtmlHelperExtensions.cs" />
     <Compile Include="Gravatar\Html\UrlHelperExtensions.cs" />
-    <Compile Include="Migrations.cs" />
-    <Compile Include="Models\ThemeSettingsRecord.cs" />
+    <Compile Include="Handlers\ThemeSettingsPartHandler.cs" />
+    <Compile Include="Models\ThemeSettingsPart.cs" />
     <Compile Include="Permissions.cs" />
+    <Compile Include="ResourceManifest.cs" />
     <Compile Include="Routes.cs" />
-    <Compile Include="Services\IThemeSettingsService.cs" />
-    <Compile Include="Services\ThemeSettingsService.cs" />
-    <Compile Include="ViewModels\ThemeSettingsViewModel.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Content-Blog.Detail.cshtml" />
@@ -399,6 +364,10 @@
       <Project>{9916839c-39fc-4ceb-a5af-89ca7e87119f}</Project>
       <Name>Orchard.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Modules\Orchard.Blogs\Orchard.Blogs.csproj">
+      <Project>{63fbd4d9-e1da-4a7b-aa6a-d6074fe50867}</Project>
+      <Name>Orchard.Blogs</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Modules\Orchard.MediaLibrary\Orchard.MediaLibrary.csproj">
       <Project>{73a7688a-5bd3-4f7e-adfa-ce36c5a10e3b}</Project>
       <Name>Orchard.MediaLibrary</Name>
@@ -407,6 +376,19 @@
       <Project>{cde24a24-01d3-403c-84b9-37722e18dfb7}</Project>
       <Name>Orchard.Themes</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Modules\Orchard.Users\Orchard.Users.csproj">
+      <Project>{79aed36e-abd0-4747-93d3-8722b042454b}</Project>
+      <Name>Orchard.Users</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Resources.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Insertions.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts\Theme.ThemeSettings.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
