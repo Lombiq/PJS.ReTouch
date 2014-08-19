@@ -6,5 +6,9 @@
     WorkContext.Layout.Header.Add(New.Branding(), "0"); // Site name and link to the home page
     WorkContext.Layout.Footer.Add(New.Copyright(), "5"); // Copyright notice
 
-    //WorkContext.Layout.Footer.Add(New.Styler(), "0"); // Online Styler-remove or comment this line to disable styler
+    if (WorkContext.HttpContext.Request.RawUrl == Href("~/")) {
+        WorkContext.Layout.Featured.Add(New.Slider(), "0");
+    }
+    
+    WorkContext.Layout.Footer.Add(New.Styler(), "0"); // Online Styler-remove or comment this line to disable styler
 }

@@ -32,7 +32,7 @@
             @Html.Password("confirmPassword", null, new { @class = "form-control validate[required,minSize[" + ViewData["PasswordLength"] + "],equals[password]]", placeholder = T("Confirm Password") })
         </div>
         <div class="form-group">
-            <span class="pull-right" style="margin: 10px 0;">@T("Already have an account?") @Html.ActionLink(T("Sign In").ToString(), "LogOn", new { ReturnUrl = Request.QueryString["ReturnUrl"] }, new { Controller = "Account", Area = "Orchard.Users" })</span>
+            <span class="pull-right" style="margin: 10px 0;">Already have an account? @Html.ActionLink(T("Sign In").ToString(), "LogOn", new { ReturnUrl = Request.QueryString["ReturnUrl"] }, new { Controller = "Account", Area = "Orchard.Users" })</span>
             <button type="submit" class="btn btn-default">@T("Sign Up")</button>
         </div>
     }
