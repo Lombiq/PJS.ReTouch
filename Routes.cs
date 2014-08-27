@@ -16,13 +16,13 @@ namespace PJS.ReTouch {
                     Priority = 5,
                     Route = new Route("ValidateUserName",
                         new RouteValueDictionary {
-                            {"area", Constants.RoutesAreaName},
+                            {"area", "PJS.ReTouch"},
                             {"controller", "Validate"},
                             {"action", "ValidateUserName"}
                         },
                         new RouteValueDictionary(),
                         new RouteValueDictionary {
-                            {"area", Constants.RoutesAreaName}
+                            {"area", "PJS.ReTouch"}
                         },
                         new MvcRouteHandler())
                 },
@@ -30,13 +30,13 @@ namespace PJS.ReTouch {
                     Priority = 5,
                     Route = new Route("ValidateUserEmail",
                         new RouteValueDictionary {
-                            {"area", Constants.RoutesAreaName},
+                            {"area", "PJS.ReTouch"},
                             {"controller", "Validate"},
                             {"action", "ValidateUserEmail"}
                         },
                         new RouteValueDictionary(),
                         new RouteValueDictionary {
-                            {"area", Constants.RoutesAreaName}
+                            {"area", "PJS.ReTouch"}
                         },
                         new MvcRouteHandler())
                 },
@@ -44,13 +44,13 @@ namespace PJS.ReTouch {
                     Priority = 5,
                     Route = new Route("ValidateUserNameEmail",
                         new RouteValueDictionary {
-                            {"area", Constants.RoutesAreaName},
+                            {"area", "PJS.ReTouch"},
                             {"controller", "Validate"},
                             {"action", "ValidateUserNameEmail"}
                         },
                         new RouteValueDictionary(),
                         new RouteValueDictionary {
-                            {"area", Constants.RoutesAreaName}
+                            {"area", "PJS.ReTouch"}
                         },
                         new MvcRouteHandler())
                 }

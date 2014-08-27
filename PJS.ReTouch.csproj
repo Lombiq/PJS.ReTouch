@@ -111,64 +111,11 @@
     <Content Include="Content\ui.totop.png" />
     <Content Include="Scripts\jquery.isotope.min.js" />
     <Content Include="Scripts\jquery.prettyPhoto.min.js" />
-    <Content Include="Scripts\jquery.themepunch.revolution.min.js" />
-    <Content Include="Scripts\rs-plugin\jquery.themepunch.plugins.min.js" />
-    <Content Include="Scripts\rs-plugin\jquery.themepunch.revolution.js" />
-    <Content Include="Scripts\rs-plugin\jquery.themepunch.revolution.min.js" />
     <Content Include="Scripts\script.min.js" />
-    <Content Include="Scripts\jquery.styler.js" />
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\font-awesome.css" />
     <Content Include="Styles\overwrite.css" />
     <Content Include="Styles\prettyPhoto.css" />
-    <Content Include="Styles\rs-plugin\assets\arrowleft.png" />
-    <Content Include="Styles\rs-plugin\assets\arrowright.png" />
-    <Content Include="Styles\rs-plugin\assets\arrow_large_left.png" />
-    <Content Include="Styles\rs-plugin\assets\arrow_large_right.png" />
-    <Content Include="Styles\rs-plugin\assets\arrow_left.png" />
-    <Content Include="Styles\rs-plugin\assets\arrow_left2.png" />
-    <Content Include="Styles\rs-plugin\assets\arrow_right.png" />
-    <Content Include="Styles\rs-plugin\assets\arrow_right2.png" />
-    <Content Include="Styles\rs-plugin\assets\black50.png" />
-    <Content Include="Styles\rs-plugin\assets\boxed_bgtile.png" />
-    <Content Include="Styles\rs-plugin\assets\bullet.png" />
-    <Content Include="Styles\rs-plugin\assets\bullets.png" />
-    <Content Include="Styles\rs-plugin\assets\bullets2.png" />
-    <Content Include="Styles\rs-plugin\assets\bullet_boxed.png" />
-    <Content Include="Styles\rs-plugin\assets\coloredbg.png" />
-    <Content Include="Styles\rs-plugin\assets\grain.png" />
-    <Content Include="Styles\rs-plugin\assets\gridtile.png" />
-    <Content Include="Styles\rs-plugin\assets\gridtile_3x3.png" />
-    <Content Include="Styles\rs-plugin\assets\gridtile_3x3_white.png" />
-    <Content Include="Styles\rs-plugin\assets\gridtile_white.png" />
-    <Content Include="Styles\rs-plugin\assets\large_left.png" />
-    <Content Include="Styles\rs-plugin\assets\large_right.png" />
-    <Content Include="Styles\rs-plugin\assets\loader.gif" />
-    <Content Include="Styles\rs-plugin\assets\loader2.gif" />
-    <Content Include="Styles\rs-plugin\assets\navigdots.png" />
-    <Content Include="Styles\rs-plugin\assets\navigdots_bgtile.png" />
-    <Content Include="Styles\rs-plugin\assets\shadow1.png" />
-    <Content Include="Styles\rs-plugin\assets\shadow2.png" />
-    <Content Include="Styles\rs-plugin\assets\shadow3.png" />
-    <Content Include="Styles\rs-plugin\assets\small_left.png" />
-    <Content Include="Styles\rs-plugin\assets\small_left_boxed.png" />
-    <Content Include="Styles\rs-plugin\assets\small_right.png" />
-    <Content Include="Styles\rs-plugin\assets\small_right_boxed.png" />
-    <Content Include="Styles\rs-plugin\assets\timer.png" />
-    <Content Include="Styles\rs-plugin\assets\timerdot.png" />
-    <Content Include="Styles\rs-plugin\assets\transparent.jpg" />
-    <Content Include="Styles\rs-plugin\assets\white50.png" />
-    <Content Include="Styles\rs-plugin\css\captions-original.css" />
-    <Content Include="Styles\rs-plugin\css\dynamic-captions.css" />
-    <Content Include="Styles\rs-plugin\css\settings.css" />
-    <Content Include="Styles\rs-plugin\css\static-captions.css" />
-    <Content Include="Styles\rs-plugin\font\revicons.svg" />
-    <Content Include="Styles\rs-plugin\images\decor_inside.png" />
-    <Content Include="Styles\rs-plugin\images\decor_inside_white.png" />
-    <Content Include="Styles\rs-plugin\images\decor_testimonial.png" />
-    <Content Include="Styles\rs-plugin\images\gradient\g30.png" />
-    <Content Include="Styles\rs-plugin\images\gradient\g40.png" />
-    <Content Include="Styles\settings.css" />
     <Content Include="Styles\skins.css" />
     <Content Include="Styles\style.min.css" />
     <Content Include="Styles\style.css" />
@@ -345,7 +292,6 @@
     <Content Include="Views\NotFound.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Constants.cs" />
     <Compile Include="Controllers\ValidateController.cs" />
     <Compile Include="Gravatar\Gravatar.cs" />
     <Compile Include="Gravatar\Gremail.cs" />
@@ -355,7 +301,6 @@
     <Compile Include="Gravatar\Html\UrlHelperExtensions.cs" />
     <Compile Include="Handlers\ThemeSettingsPartHandler.cs" />
     <Compile Include="Models\ThemeSettingsPart.cs" />
-    <Compile Include="Permissions.cs" />
     <Compile Include="ResourceManifest.cs" />
     <Compile Include="Routes.cs" />
   </ItemGroup>
@@ -385,9 +330,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Parts.TwitterWidget.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Styler.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Parts.ZenGallery.cshtml" />
@@ -429,10 +371,6 @@
       <Project>{79aed36e-abd0-4747-93d3-8722b042454b}</Project>
       <Name>Orchard.Users</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Modules\Orchard.Widgets\Orchard.Widgets.csproj">
-      <Project>{194d3ccc-1153-474d-8176-fde8d7d0d0bd}</Project>
-      <Name>Orchard.Widgets</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Resources.cshtml" />
@@ -442,27 +380,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\EditorTemplates\Parts\Theme.ThemeSettings.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Slider.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\rs-plugin\assets\arrows.psd" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\rs-plugin\assets\bullets.psd" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\rs-plugin\assets\small_arrows.psd" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\rs-plugin\font\revicons.eot" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\rs-plugin\font\revicons.ttf" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\rs-plugin\font\revicons.woff" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
