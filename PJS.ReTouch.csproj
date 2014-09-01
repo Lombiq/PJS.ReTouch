@@ -247,9 +247,6 @@
     <Content Include="Views\Parts.CommentForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Parts.Title-BlogPost.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Pager.cshtml" />
   </ItemGroup>
   <ItemGroup>
