@@ -1,5 +1,6 @@
 ﻿@using Orchard.ContentManagement;
 @using Orchard.MediaLibrary.Fields
+@using Orchard.Tags.ViewModels;
 
 @{ 
     var blogPost = Model.ContentItem;
@@ -73,8 +74,11 @@
                     </li>
                     <li>@T("By") <a href="/Search?q=@blogPost.CommonPart.Owner.UserName">@blogPost.CommonPart.Owner.UserName</a>
                     </li>
-                    <li>@T("In") @Display(Model.Tags)
-                    </li>
+                    @if ((Model.Tags.Items[0].Tags as IEnumerable<ShowTagViewModel>).Any())
+                    {
+                        <li>@T("In") @Display(Model.Tags)
+                        </li>
+                    }
                     <li>
                         @Display(Model.CommentsCount)
                     </li>
