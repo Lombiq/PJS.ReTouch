@@ -74,8 +74,7 @@
                     </li>
                     <li>@T("By") <a href="/Search?q=@blogPost.CommonPart.Owner.UserName">@blogPost.CommonPart.Owner.UserName</a>
                     </li>
-                    @if ((Model.Tags.Items[0].Tags as IEnumerable<ShowTagViewModel>).Any())
-                    {
+                    @if ((Model.Tags.Items[0].Tags as IEnumerable<ShowTagViewModel>).Any()) {
                         <li>@T("In") @Display(Model.Tags)
                         </li>
                     }
