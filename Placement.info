@@ -39,4 +39,9 @@
   <Match Path="~/Search">
     <Place Parts_Title="-"/>
   </Match>
+
+  <Match ContentType="ProjectionPage">
+    <Place Parts_Title="/BeforeMain:0"
+           Parts_Common_Metadata="-"/>
+  </Match>
 </Placement>
