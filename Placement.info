@@ -1,14 +1,9 @@
 <Placement>
-  <Match ContentType="Page">
+  <Match DisplayType="Detail">
     <Place Parts_Title="/BeforeMain:0"
            Parts_Common_Metadata="-"/>
   </Match>
-
-  <Match ContentType="Blog">
-    <Place Parts_Title="/BeforeMain:0"
-           Parts_Common_Metadata="-"/>
-  </Match>
-
+  
   <Match ContentType="BlogPost">
     <Match DisplayType="Summary">
       <Place Parts_Common_Body_Summary="Summary:0"
@@ -17,13 +12,11 @@
              Parts_Common_Metadata_Summary="-" />
     </Match>
     <Match DisplayType="Detail">
-      <Place Parts_Title="/BeforeMain:0"
-             Parts_Common_Body="Summary:0"
+      <Place Parts_Common_Body="Summary:0"
              Parts_Tags_ShowTags="Tags:0"
              Parts_Comments_Count="CommentsCount:0"
              Parts_ListOfComments="Footer:1"
-             Parts_CommentForm="Footer:2"
-             Parts_Common_Metadata="-" />
+             Parts_CommentForm="Footer:2" />
     </Match>
   </Match>
 
@@ -38,10 +31,5 @@
 
   <Match Path="~/Search">
     <Place Parts_Title="-"/>
-  </Match>
-
-  <Match ContentType="ProjectionPage">
-    <Place Parts_Title="/BeforeMain:0"
-           Parts_Common_Metadata="-"/>
   </Match>
 </Placement>
