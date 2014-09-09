@@ -113,7 +113,9 @@
     <Content Include="Scripts\jquery.prettyPhoto.min.js" />
     <Content Include="Scripts\script.min.js" />
     <Content Include="Styles\bootstrap.css" />
-    <Content Include="Styles\font-awesome.css" />
+    <Content Include="Styles\font-awesome-4.2.0\css\font-awesome.css" />
+    <Content Include="Styles\font-awesome-4.2.0\css\font-awesome.min.css" />
+    <Content Include="Styles\font-awesome-4.2.0\fonts\fontawesome-webfont.svg" />
     <Content Include="Styles\overwrite.css" />
     <Content Include="Styles\prettyPhoto.css" />
     <Content Include="Styles\skins.css" />
@@ -380,6 +382,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\EditorTemplates\Parts\Theme.ThemeSettings.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\font-awesome-4.2.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Styles\font-awesome-4.2.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Styles\font-awesome-4.2.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Styles\font-awesome-4.2.0\fonts\FontAwesome.otf" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -10,6 +10,7 @@ namespace PJS.ReTouch {
             manifest.DefineScript("prettyPhoto").SetUrl("jquery.prettyPhoto.min.js").SetVersion("3.1.5").SetDependencies("jQuery");
 
             manifest.DefineStyle("ThemeStyle").SetUrl("style.min.css");
+            manifest.DefineStyle("Font-Awesome").SetUrl("font-awesome-4.2.0/css/font-awesome.min.css", "font-awesome-4.2.0/css/font-awesome.css").SetVersion("4.2.0");
             manifest.DefineStyle("prettyPhoto").SetUrl("prettyPhoto.css");
         }
     }
