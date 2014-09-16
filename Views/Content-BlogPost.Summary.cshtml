@@ -51,11 +51,11 @@
                 @foreach (var mediapart in Model.ContentItem.BlogPostPart.BlogPostImage.MediaParts) {
                     <img src="@mediapart.MediaUrl" alt="@mediapart.AlternateText" class="img-responsive" />
                     using (Script.Foot()) {
-                    <script type="text/javascript">
-                        $(function () {
-                            $('#blogpost-@blogPost.Id .post-details').css('border-top', '0');
-                        });
-                    </script>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('#blogpost-@blogPost.Id .post-details').css('border-top', '0');
+                            });
+                        </script>
                     }
                 }
             </div>
@@ -75,12 +75,15 @@
             <h4 class="post-title"><a href="@Url.ItemDisplayUrl((IContent)blogPost)">@blogPost.TitlePart.Title</a></h4>
             <div class="post-meta">
                 <ul class="meta-list">
-                    <li>@T("Posted on") <a href="#">@blogPost.CommonPart.CreatedUtc.ToLocalTime().ToString("MMMM d, yyyy")</a>
+                    <li>
+                        @T("Posted on") <a href="#">@blogPost.CommonPart.CreatedUtc.ToLocalTime().ToString("MMMM d, yyyy")</a>
                     </li>
-                    <li>@T("By") <a href="/Search?q=@blogPost.CommonPart.Owner.UserName">@blogPost.CommonPart.Owner.UserName</a>
+                    <li>
+                        @T("By") <a href="/Search?q=@blogPost.CommonPart.Owner.UserName">@blogPost.CommonPart.Owner.UserName</a>
                     </li>
                     @if (Model.Tags.Items.Count > 0 && ((IEnumerable<ShowTagViewModel>)Model.Tags.Items[0].Tags).Any()) {
-                        <li>@T("In") @Display(Model.Tags)
+                        <li>
+                            @T("In") @Display(Model.Tags)
                         </li>
                     }
                     <li>
