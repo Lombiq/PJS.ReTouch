@@ -1,6 +1,6 @@
 ﻿/* Orchard class overrides
 -------------------------------------------------- */
-article.widget { padding: 0; overflow: visible; }
+article.widget { padding: 0; overflow: hidden; }
 
 
 /* Bootstrap class overrides
