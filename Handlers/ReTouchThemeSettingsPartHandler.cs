@@ -6,11 +6,11 @@ using PJS.ReTouch.Models;
 
 namespace PJS.ReTouch.Handlers {
     [UsedImplicitly]
-    public class ThemeSettingsPartHandler : ContentHandler {
-        public ThemeSettingsPartHandler() {
+    public class ReTouchThemeSettingsPartHandler : ContentHandler {
+        public ReTouchThemeSettingsPartHandler() {
             T = NullLocalizer.Instance;
-            Filters.Add(new ActivatingFilter<ThemeSettingsPart>("Site"));
-            Filters.Add(new TemplateFilterForPart<ThemeSettingsPart>("ThemeSettings", "Parts/Theme.ThemeSettings", "theme"));
+            Filters.Add(new ActivatingFilter<ReTouchThemeSettingsPart>("Site"));
+            Filters.Add(new TemplateFilterForPart<ReTouchThemeSettingsPart>("ReTouchThemeSettings", "Parts/ReTouchThemeSettings", "Theme-ReTouch"));
         }
 
         public Localizer T { get; set; }
@@ -19,7 +19,7 @@ namespace PJS.ReTouch.Handlers {
             if (context.ContentItem.ContentType != "Site")
                 return;
             base.GetItemMetadata(context);
-            context.Metadata.EditorGroupInfo.Add(new GroupInfo(T("Theme")));
+            context.Metadata.EditorGroupInfo.Add(new GroupInfo(T("Theme-ReTouch")));
         }
     }
 }

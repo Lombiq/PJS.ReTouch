@@ -300,9 +300,9 @@
     <Compile Include="Gravatar\GrofileInfo.cs" />
     <Compile Include="Gravatar\Html\HtmlHelperExtensions.cs" />
     <Compile Include="Gravatar\Html\UrlHelperExtensions.cs" />
-    <Compile Include="Handlers\ThemeSettingsPartHandler.cs" />
+    <Compile Include="Handlers\ReTouchThemeSettingsPartHandler.cs" />
     <Compile Include="MainMenu.cs" />
-    <Compile Include="Models\ThemeSettingsPart.cs" />
+    <Compile Include="Models\ReTouchThemeSettingsPart.cs" />
     <Compile Include="ResourceManifest.cs" />
     <Compile Include="Routes.cs" />
   </ItemGroup>
@@ -381,7 +381,7 @@
     <Content Include="Views\Insertions.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\EditorTemplates\Parts\Theme.ThemeSettings.cshtml" />
+    <Content Include="Views\EditorTemplates\Parts\ReTouchThemeSettings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\font-awesome-4.2.0\fonts\fontawesome-webfont.eot" />

@@ -1,7 +1,7 @@
 ﻿using Orchard.ContentManagement;
 
 namespace PJS.ReTouch.Models {
-    public class ThemeSettingsPart : ContentPart {
+    public class ReTouchThemeSettingsPart : ContentPart {
         public string Skin {
             get { return this.Retrieve(r => r.Skin, "color-skin-1"); }
             set { this.Store(r => r.Skin, value); }
