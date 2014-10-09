@@ -9,7 +9,7 @@
                 $('.color-skin').on('click', function (e) {
                     $('.color-skin.active').removeClass('active');
                     $('#' + $(this).attr('id')).addClass('active');
-                    $('#ThemeSettings_Skin').val($(this).attr('id'));
+                    $('#@(Html.FieldIdFor(m => m.Skin))').val($(this).attr('id'));
                 });
             });
         </script>
