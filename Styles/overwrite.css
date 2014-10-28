@@ -2,8 +2,6 @@
 -------------------------------------------------- */
 article.widget { padding: 0; overflow: visible; }
 
-.sidebar article.widget { overflow: hidden; }
-
 
 /* Bootstrap class overrides
 -------------------------------------------------- */
