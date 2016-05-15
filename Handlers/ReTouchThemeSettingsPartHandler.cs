@@ -1,11 +1,9 @@
-﻿using JetBrains.Annotations;
-using Orchard.ContentManagement;
+﻿using Orchard.ContentManagement;
 using Orchard.ContentManagement.Handlers;
 using Orchard.Localization;
 using PJS.ReTouch.Models;
 
 namespace PJS.ReTouch.Handlers {
-    [UsedImplicitly]
     public class ReTouchThemeSettingsPartHandler : ContentHandler {
         public ReTouchThemeSettingsPartHandler() {
             T = NullLocalizer.Instance;
